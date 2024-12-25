@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Royale</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>The Grand Royale</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#deskripsi">Tentang Kami</a></li>
+                <li><a href="#cabang">Cabang Kami</a></li>
+                <li><a href="#promosi">Promosi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gambar Header -->
+    <section id="home">
+        <img src="hotel.jpeg" alt="The Grand Royale" class="header-image">
+    </section>
+
+    <!-- Deskripsi Perusahaan -->
+    <section id="deskripsi" class="grid-container">
+        <div class="grid-item">
+            <h2>Selamat Datang di The Grand Royale</h2>
+            <p>The Grand Royale adalah tempat penginapan yang nyaman dengan layanan terbaik di Indonesia. Kami menyediakan berbagai pilihan kamar dan layanan premium untuk memastikan kenyamanan Anda selama menginap. Dengan berbagai cabang di lokasi strategis, kami siap memberikan pengalaman menginap yang tak terlupakan.</p>
+        </div>
+    </section>
+
+    <!-- Image Slider - Fasilitas Bergerak -->
+    <section id="slider" class="grid-container">
+        <div class="grid-item">
+            <h3>Fasilitas Kami</h3>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="photo1.jpeg" alt="Fasilitas 1">
+                    <img src="photo2.jpeg" alt="Fasilitas 2">
+                    <img src="photo3.jpeg" alt="Fasilitas 3">
+                    <img src="photo4.jpeg" alt="Fasilitas 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Cabang -->
+    <section id="cabang" class="grid-container">
+        <div class="grid-item">
+            <h3>Cabang Kami</h3>
+            <ul>
+                <li>Cabang Jakarta - Jalan Merdeka No. 10</li>
+                <li>Cabang Bali - Jalan Pantai No. 20</li>
+                <li>Cabang Yogyakarta - Jalan Malioboro No. 50</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Tabel Promosi -->
+    <section id="promosi" class="grid-container">
+        <div class="grid-item">
+            <h3>Promosi Kami</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Harga</th>
+                        <th>Waktu</th>
+                        <th>Syarat & Ketentuan</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Liburan Keluarga</td>
+                        <td>Rp 1.500.000</td>
+                        <td>01 Januari - 31 Maret</td>
+                        <td>Min. 2 orang</td>
+                        <td>Paket liburan untuk keluarga dengan diskon 20%</td>
+                    </tr>
+                    <tr>
+                        <td>Staycation</td>
+                        <td>Rp 800.000</td>
+                        <td>Setiap akhir pekan</td>
+                        <td>Min. 1 malam</td>
+                        <td>Paket menginap di akhir pekan dengan sarapan gratis</td>
+                    </tr>
+                    <tr>
+                        <td>Romantic Getaway</td>
+                        <td>Rp 2.000.000</td>
+                        <td>14 Februari - 20 Februari</td>
+                        <td>Pasangan</td>
+                        <td>Paket menginap romantis dengan makan malam mewah</td>
+                    </tr>
+                    <tr>
+                        <td>Business Trip</td>
+                        <td>Rp 1.200.000</td>
+                        <td>Setiap hari Senin - Jumat</td>
+                        <td>Min. 1 malam</td>
+                        <td>Paket untuk perjalanan bisnis dengan layanan transportasi</td>
+                    </tr>
+                    <tr>
+                        <td>Promo Akhir Tahun</td>
+                        <td>Rp 1.000.000</td>
+                        <td>Desember</td>
+                        <td>Min. 2 malam</td>
+                        <td>Paket spesial akhir tahun dengan harga terjangkau</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Form Kontak -->
+    <section id="kontak" class="grid-container">
+        <div class="grid-item">
+            <h3>Hubungi Kami</h3>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Grand Royale. Semua hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
